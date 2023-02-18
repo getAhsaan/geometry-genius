@@ -49,6 +49,7 @@ function setInputValue(id, value) {
 function displayInUI(serial,name,area){
     const resultContainer = document.getElementById('result-container');
     const tr = document.createElement('tr');
+    tr.className = 'text-xs';
     tr.innerHTML = `
     <td>${serial}. ${name}</td>
     <td><span id="result">${area}</span>cm<sup>2</sup></td>
