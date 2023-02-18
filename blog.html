@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-4 container mx-auto m-12 bg-gray-100">
+    <a href="index.html"><button
+            class="text-center px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-md my-5 text-white font-bold">Go
+            Home</button></a>
+    <h1 class="font-bold text-5xl uppercase text-center">WelCome to My <span class="text-orange-500">Blog</span>
+    </h1>
+    <header class="bg-sky-300 p-4 my-8 text-center font-bold text-4xl text-green-900 rounded-md">
+        <h2>Questions and Answers</h2>
+    </header>
+    <main>
+        <!-- question one / article one -->
+        <article class="py-10">
+            <h2 class="font-bold text-2xl mb-3">1. What is DOM and what is the purpose of DOM?</h2>
+            <div class="ml-8 italic">
+                <p class="text-lg text-gray-700">
+                    The Document Object Model (DOM) is a programming interface that provides a structured representation
+                    of web documents as
+                    a tree-like object model. It allows developers to access and manipulate web page elements using
+                    programming languages
+                    such as JavaScript, and is an essential part of web development. <br><br> There are three types of
+                    DOM: <br> 1. Core
+                    DOM, <br> 2. XML DOM, <br>
+                    3. HTML DOM <br> <br>
+                    The HTML DOM treats all HTML elements as
+                    objects and views an
+                    HTML document as a tree of nodes, where each node represents an HTML element. With the HTML DOM,
+                    developers can
+                    dynamically create, change, or remove elements from a web page, as well as add events to elements
+                    like "click" or
+                    "mouseover" for interactivity.
+                </p>
+            </div>
+        </article>
+        <!-- question two / article two -->
+        <article class="py-10">
+            <h2 class="font-bold text-2xl mb-3">2. How will you select HTML elements using DOM? Name the DOM methods.
+            </h2>
+            <div class="ml-8 italic">
+                <p class="text-lg text-gray-700 mb-4">There are 5 ways in which we can select elements in a DOM using
+                    selectors.</p>
+                <ol class="list-decimal list-inside space-y-3">
+                    <li><code class="text-orange-500">getElementById()</code>
+                        <ul class="indent-4 list-inside">
+                            <li>
+
+                                This method allows us to select a specific element by its unique ID.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><code class="text-orange-500">getElementsByClassName()</code>
+                        <ul class="indent-4 list-inside">
+                            <li>
+
+                                This method allows us to select all elements that have a specific class name and returns
+                                an HTMLCollection.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><code class="text-orange-500">getElementsByTagName()</code>
+                        <ul class="indent-4 list-inside">
+                            <li>
+
+                                This method allows us to select all elements with a specified tag name and returns an
+                                HTMLCollection.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><code class="text-orange-500">querySelector()</code>
+                        <ul class="indent-4 list-inside">
+                            <li>
+
+                                This method allows us to select an HTML element using a CSS selector.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><code class="text-orange-500">querySelectorAll()</code>
+                        <ul class="indent-4 list-inside">
+                            <li>
+
+                                This method allows us to select all HTML elements that match a CSS selector and returns
+                                a NodeList.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </article>
+        <!-- question three / article three -->
+        <article class="py-10">
+            <h2 class="font-bold text-2xl mb-3">3. What is event bubble?</h2>
+            <div class="ml-8 italic">
+                <p class="text-lg text-gray-700">Event bubbling is a concept in the Document Object Model (DOM) that
+                    occurs when an element receives an event, and that
+                    event is bubbled (or we can say propagated or broadcast) up through its ancestors and predecessors
+                    in the DOM tree until
+                    it reaches the root element. <br><br>
+
+
+                    Applying <code class="text-orange-500">stopPropagation()</code>
+                    method we can stop event bubbling.</p>
+            </div>
+        </article>
+        <!-- question four / article four -->
+        <article class="py-10">
+            <h2 class="font-bold text-2xl mb-3">4. What is a callback function and why will you use it?</h2>
+            <div class="ml-8 italic">
+                <p class="text-lg text-gray-700">A callback function is a function that is passed as an argument to
+                    another function and then executed inside the outer
+                    function to perform a specific action or routine.</p>
+                <p class="text-lg text-gray-700 mt-3"> We use callback functions in JavaScript to enable asynchronous
+                    programming, handle user input, make network requests,
+                    and execute code after a certain task has completed. Callbacks promote modular and reusable code,
+                    keeping code organized
+                    and easier to maintain.</p>
+            </div>
+        </article>
+    </main>
+
+</body>
+
+</html>
