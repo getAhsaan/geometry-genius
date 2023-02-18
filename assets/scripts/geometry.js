@@ -82,3 +82,72 @@ document.getElementById('parallelogram-btn').addEventListener('click', function 
     setInputValue('parallelogram-height', "");
 
 })
+// rhombus area calculator 
+
+document.getElementById('rhombus-btn').addEventListener('click', function () {
+    const d1 = getInputValue('rhombus-d1');
+    const d2 = getInputValue('rhombus-d2');
+    const name = getInputName('rhombus-name');
+
+    if (d1 === 0 || d2 === 0) {
+        return;
+    }
+    serial += 1;
+    // calculate 
+    const rhombusArea = (areaCalculator('rhombus', d1, d2)).toFixed(2);
+
+
+    // display result in website
+    displayInUI(serial, name, rhombusArea)
+
+    // set empty input value 
+    setInputValue('rhombus-d1', "");
+    setInputValue('rhombus-d2', "");
+
+})
+// pentagon area calculator 
+
+document.getElementById('pentagon-btn').addEventListener('click', function () {
+    const p = getInputValue('pentagon-p');
+    const base = getInputValue('pentagon-base');
+    const name = getInputName('pentagon-name');
+
+    if (p === 0 || base === 0) {
+        return;
+    }
+    serial += 1;
+    // calculate 
+    const pentagonArea = (areaCalculator('pentagon', p, base)).toFixed(2);
+
+
+    // display result in website
+    displayInUI(serial, name, pentagonArea)
+
+    // set empty input value 
+    setInputValue('pentagon-p', "");
+    setInputValue('pentagon-base', "");
+
+})
+// ellipse area calculator 
+
+document.getElementById('ellipse-btn').addEventListener('click', function () {
+    const a = getInputValue('ellipse-a');
+    const b = getInputValue('ellipse-b');
+    const name = getInputName('ellipse-name');
+
+    if (a === 0 || b === 0) {
+        return;
+    }
+    serial += 1;
+    // calculate 
+    const ellipseArea = (areaCalculator('ellipse', a, b)).toFixed(2);
+
+
+    // display result in website
+    displayInUI(serial, name, ellipseArea)
+
+    // set empty input value 
+    setInputValue('ellipse-a', "");
+    setInputValue('ellipse-b', "");
+
+})
