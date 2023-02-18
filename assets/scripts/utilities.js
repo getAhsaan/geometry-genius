@@ -64,3 +64,9 @@ function displayInUI(serial,name,area){
     `;
     resultContainer.appendChild(tr);
 }
+
+// for go to blog page
+
+function goToMyBlogPage(){
+    window.location.href = 'blog.html';
+}

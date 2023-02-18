@@ -151,3 +151,7 @@ document.getElementById('ellipse-btn').addEventListener('click', function () {
     setInputValue('ellipse-b', "");
 
 })
+
+document.getElementById('blog-page').addEventListener('click',function(){
+    goToMyBlogPage();
+})
