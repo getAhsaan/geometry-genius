@@ -27,12 +27,39 @@ function getInputName(id) {
 }
 
 // triangle area calculator
-function areaCalculator(base, width) {
-    return 0.5 * base * width;
+function areaCalculator(type, base, width) {
+    if(type === 'triangle' || type === 'rhombus' || type === 'pentagon'){
+        return 0.5 * base * width;  
+    }
+    if(type === 'ellipse'){
+        return Math.PI * base * width;
+    }
+
+     return base * width;
 }
 
 // set input value
 function setInputValue(id, value) {
     const targetInput = document.getElementById(id);
     targetInput.value = value;
+}
+
+
+// display all calculation in the website
+function displayInUI(serial,name,area){
+    const resultContainer = document.getElementById('result-container');
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+    <td>${serial}. ${name}</td>
+    <td><span id="result">${area}</span>cm<sup>2</sup></td>
+     <td>
+     <button 
+     id="convert-cm-m" 
+     class="py-1 px-2 bg-blue-500 text-white rounded-md">
+     Convert to m<sup>2</sup>
+    </button>
+    </td>
+    <td><a id="remove" href="#">X</a></td>
+    `;
+    resultContainer.appendChild(tr);
 }
